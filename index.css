@@ -24,7 +24,6 @@ a {
     background: #1b3a4b;
     border-bottom: 1px solid #000;
     position: fixed;
-	z-index: 1;
 }
 
 header{
@@ -273,12 +272,13 @@ nav ul li a:hover {
         width: 30%;
         height: 100%;
         position: fixed;
-        top: 0;
+        top: 76px;
         right: 0;
-        background: #000000;
+        background: #1b3a4b;
         text-align: center;
         flex-direction: column;
         padding: 10px 0;
+        border-left: 0.5px solid #000;
     }
 
     /* Show menu when active */
@@ -288,7 +288,6 @@ nav ul li a:hover {
 
     nav ul {
         flex-direction: row;
-        padding-top: 50px;
     }
 
     nav ul li {
