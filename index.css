@@ -23,6 +23,7 @@ a {
     align-items: center;
     background: #1b3a4b;
     border-bottom: 1px solid #000;
+    position: fixed;
 }
 
 header{
@@ -71,10 +72,24 @@ nav ul li a:hover {
     color: #cdb773;
 }
 
+#hamburger {
+    position: absolute;
+    right: 60px;
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
 .content {
     display: flex;
     align-items: stretch;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
 }
 
 .content img {
@@ -96,6 +111,10 @@ nav ul li a:hover {
 
 .content p:nth-child(1){
     background-color: #a7c4c2;
+}
+
+#third p{
+    background-color: #1b3a4b;
 }
 
 .fcontainer {
@@ -161,6 +180,7 @@ nav ul li a:hover {
     border-radius: 5px;
     background-color: #f4f4f4;
     font-size: 14px;
+    resize: none;
     transition: border 0.3s ease;
 }
 
@@ -168,6 +188,7 @@ nav ul li a:hover {
 .left form textarea:focus {
     border: 1px solid #cdb773;
     outline: none;
+    
 }
 
 .left form button {
@@ -240,7 +261,40 @@ nav ul li a:hover {
     color: #cdb773;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1500px) {
+    #hamburger {
+        display: block;
+    }
+
+    /* Hide menu by default */
+    nav {
+        display: none;
+        width: 30%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: #000000;
+        text-align: center;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    /* Show menu when active */
+    nav.active {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: row;
+        padding-top: 50px;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+        float: none;
+    }
+
     .f1 {
         flex-direction: column;
         gap: 30px;
