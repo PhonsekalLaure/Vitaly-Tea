@@ -24,6 +24,7 @@ a {
     background: #1b3a4b;
     border-bottom: 1px solid #000;
     position: fixed;
+	z-index: 1;
 }
 
 header{
