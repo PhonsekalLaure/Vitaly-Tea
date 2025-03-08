@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
     box-sizing: border-box;
-	background: #ffffff;
+	background: #fafafa;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -11,12 +11,8 @@ body {
     display: block;
 }
 
-a {
-    text-decoration: none;
-    color: #000;
-}
-
 #logonav {
+    position: fixed;
     width: 100%;
     height: 75px;
     display: flex;
@@ -24,7 +20,6 @@ a {
     background: #1b3a4b;
     border-bottom: 1px solid #000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    position: fixed;
 }
 
 header{
@@ -48,7 +43,7 @@ nav{
 #logo #logo-text {
     margin-left: 10px;
     font-size: 24px;
-    color: #ffffff;
+    color: #fafafa;
 }
 
 nav ul {
@@ -65,7 +60,8 @@ nav ul li {
   } 
 
 nav ul li a {
-    color: #ffffff;
+    text-decoration: none;
+    color: #fafafa;
     transition: color 0.3s ease;
 }
 
@@ -82,24 +78,16 @@ nav ul li a:hover {
     border: none;
     color: white;
     cursor: pointer;
-    z-index: 1;
+    transition: 0.3s ease;
 }
 
+#hamburger:hover{
+    color: #cdb773;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#gap {
+    height: 75px;
+}
 
 
 .fcontainer {
@@ -251,24 +239,24 @@ nav ul li a:hover {
         display: block;
     }
 
-    /* Hide menu by default */
     nav {
-        display: none;
         width: 30%;
         height: 100%;
         position: fixed;
         top: 76px;
-        right: 0;
+        right: -500px;
         background: #1b3a4b;
         text-align: center;
         flex-direction: column;
         padding: 10px 0;
         border-left: 0.5px solid #000;
+        transition: 0.2s linear;
+  
     }
 
-    /* Show menu when active */
     nav.active {
         display: flex;
+        right: 0;
     }
 
     nav ul {
@@ -302,5 +290,54 @@ nav ul li a:hover {
 
     .right ul li {
         justify-content: center;
+    }
+}
+
+@media (max-width: 1300px) {
+    #logo img{
+        width: 7%;
+    }
+
+    #logo #logo-text {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #logo img{
+        width: 8%;
+    }
+
+    #logo #logo-text {
+        font-size: 20px;
+    }
+
+    nav{
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    #logo img{
+        width: 8%;
+        margin-left: 50px;
+    }
+
+    #logo #logo-text {
+        font-size: 18px;
+    }
+
+    nav{
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    #logo img{
+        width: 10%;
+    }
+
+    #logo #logo-text {
+        font-size: 16px;
     }
 }
