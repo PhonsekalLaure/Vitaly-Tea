@@ -1,6 +1,9 @@
 #logonav{
   z-index: 10;  
 }
+span #logo-text{
+  text-decoration: none;
+}
 #carouselHeader{
     width: 100%;    
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
