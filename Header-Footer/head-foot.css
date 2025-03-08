@@ -348,13 +348,15 @@ nav ul li a:hover {
 @media (max-width: 800px) {
     #logo img{
         width: 9%;
-        margin-left: 50px;
+        margin-left: 15px;
     }
 
     #logo #logo-text {
         font-size: 18px;
     }
-
+    #hamburger {
+        right: 15px;
+    }
     nav{
         width: 70%;
         right: -600px;
@@ -418,5 +420,29 @@ nav ul li a:hover {
     }
     .fheader img {
         width: 6%;
+    }
+}
+
+@media (max-width: 500px) {
+    #logo img{
+        width: 12%;
+    }
+    .fheader img {
+        width: 7%;
+    }
+    .fheader h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    #logo img{
+        width: 13%;
+    }
+    .fheader img {
+        width: 8%;
+    }
+    .fheader h3 {
+        font-size: 15px;
     }
 }
