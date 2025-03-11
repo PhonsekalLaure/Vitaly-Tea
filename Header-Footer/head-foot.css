@@ -85,7 +85,7 @@ nav ul li a:hover {
     font-size: 30px;
     background: none;
     border: none;
-    color: white;
+    color: #fafafa;
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -107,7 +107,7 @@ nav ul li a:hover {
 .fcontainer {
     padding: 20px;
     background-color: #1b3a4b;
-    color: white;
+    color: #fafafa;
 }
 
 .fheader {
@@ -207,7 +207,7 @@ nav ul li a:hover {
 
 .center ul li a {
     text-decoration: none;
-    color: white;
+    color: #fafafa;
     font-size: 16px;
     transition: color 0.3s ease;
 }
@@ -240,7 +240,7 @@ nav ul li a:hover {
 
 .right ul li a {
     text-decoration: none;
-    color: white;
+    color: #fafafa;
     font-size: 16px;
     transition: color 0.3s ease;
 }

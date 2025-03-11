@@ -3,11 +3,19 @@
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
 }
 #carouselHeader h1{
+  font-family: "Lexend Giga", sans-serif;
+    font-weight: bold;
+    color: #fafafa;
     text-shadow: -0.5px -0.5px 0 #1b3a4b, 0.5px -0.5px 0 #1b3a4b, -0.5px 0.5px 0 #1b3a4b, 0.5px 0.5px 0 #1b3a4b;
 }
 #carouselHeader img{
     width: 100%;
     height: 550px;
+}
+.carousel-caption p{
+    color: #fafafa ;
+    font-size: 20px;
+    text-shadow: -0.5px -0.5px 0 #1b3a4b, 0.5px -0.5px 0 #1b3a4b, -0.5px 0.5px 0 #1b3a4b, 0.5px 0.5px 0 #1b3a4b;
 }
 #second{
     width: 80%;
@@ -63,6 +71,9 @@
   .carousel-caption h1{
     font-size: 35px;
   }
+  .carousel-caption p{
+    font-size: 18px;
+  }
   .content p{
     font-size: 16px;
   }
@@ -76,7 +87,7 @@
     font-size: 30px;
   }
   .carousel-caption p{
-    font-size: 15px;
+    font-size: 14px;
   }
   .content p{
     font-size: 14px;
