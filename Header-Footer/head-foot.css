@@ -63,7 +63,7 @@ nav ul {
 nav ul li {
     float: left;
     margin: 0 3% 0 3%;
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 500;
   } 
@@ -125,6 +125,7 @@ nav ul li a:hover {
 
 .fheader h3 {
     font-family: "Bowlby One", sans-serif;
+    text-transform: uppercase;
     margin-top: 10px;
     color: #cdb773;
     font-size: 24px;
@@ -247,7 +248,12 @@ nav ul li a:hover {
 .right ul li a:hover {
     color: #cdb773;
 }
- @media (max-width: 1365px){
+@media (max-width: 1520px) {
+    nav ul li {
+        font-size: 18px;
+    }
+}
+ @media (max-width: 1375px){
     header{
         width: 45%;
     }
@@ -297,16 +303,7 @@ nav ul li a:hover {
         font-size: 16px;
     }
 }
-
-@media (max-width: 1000px) {
-    #logo img{
-        width: 8%;
-    }
-
-    #logo #logo-text {
-        font-size: 18px;
-    }
-
+@media (max-width: 1010px) {
     #hamburger {
         display: block;
     }
@@ -330,7 +327,6 @@ nav ul li a:hover {
         z-index: 900;
     }
 
-
     nav.active {
         display: flex;
         right: 0;
@@ -344,6 +340,15 @@ nav ul li a:hover {
         margin: 15px 0;
         float: none;
         font-size: 17px;
+    }
+}
+@media (max-width: 1000px) {
+    #logo img{
+        width: 8%;
+    }
+
+    #logo #logo-text {
+        font-size: 18px;
     }
 
     .fheader img {

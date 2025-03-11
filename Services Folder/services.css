@@ -104,3 +104,10 @@ main{
         font-size: 18px;
     }
 }
+@media (max-width: 680px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
