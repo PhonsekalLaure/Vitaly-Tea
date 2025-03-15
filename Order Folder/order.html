@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitaly Tea</title>
+    <link rel="stylesheet" href="/Header-Footer/head-foot.css">
+    <link rel="stylesheet" href="order.css">
+    <link rel="icon" href="/Logo.png">
+
+</head>
+<body>
+    <div id = "wrapper">
+        <div id="logonav">
+            <header>
+                <div id="logo">
+                    <a href="/index.html">
+                        <div id="logo">
+                            <img src="/Logo.png">
+                            <span id="logo-text">VITALY TEA</span>
+                        </div>
+                    </a>
+                </div>
+            </header>
+            
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Services Folder/services.html">Services</a></li>
+                    <li><a href="/Menu Folder/menu.html">Menu</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="/About Folder/about.html">About</a></li>
+                    <li><a href="/Contact Folder/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button id="hamburger" aria-label="Toggle Navigation">
+                &#9776;
+            </button>
+        </div>
+        
+        <div class="container">
+            <div class="order">
+                <h1>ORDER FORM</h1>
+                <h6>CHECK ALL THAT APPLY.</h6>
+                <div class="row">
+                    <div class="services">
+                        <h2>Services</h2>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="form" value="Digital Printing" id="digital-printing">
+                                <label for="digital-printing">Digital Printing</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="form" value="Binding" id="binding">
+                                <label for="binding">Binding</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="form" value="Laminating" id="laminating">
+                                <label for="laminating">Laminating</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="form" value="Cutting" id="cutting">
+                                <label for="cutting">Cutting</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h2>Menu</h2>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="form" value="Cold Drinks" id="cold-drinks">
+                                <label for="cold-drinks">Cold Drinks</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="form" value="Hot Drinks" id="hot-drinks">
+                                <label for="hot-drinks">Hot Drinks</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="form" value="Sandwiches" id="sandwiches">
+                                <label for="sandwiches">Sandwiches</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit" id="order">ORDER</button>
+            </div>
+            <div class="OrderForm" id="OrderForm">
+                <div class="digital-printing" id="digital-printing-section">
+                    <h2>DIGITAL PRINTING</h2>
+                    <h5>PRICE PER PAGE: ₱100</h5>
+                    <div class="dp-row">
+                        <div class="dp1">
+                            <h3>PAPER</h3>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="paper" value="Glossy" id="Glossy">
+                                    <label for="Glossy">GLOSSY <b> +₱10</b></label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="paper" value="Matte" id="Matte">
+                                    <label for="Matte">MATTE <b> +₱20</b></label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="paper" value="Textured" id="Textured">
+                                    <label for="Textured">TEXTURED <b> +₱30</b> </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dp2">
+                            <h3>INK</h3>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="ink" value="HP" id="HP">
+                                    <label for="HP">HP <b> +₱2</b> </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="ink" value="Epson" id="Epson">
+                                    <label for="Epson">EPSON <b> +₱5</b> </label>
+                                    
+                                </li>
+                                <li>
+                                    <input type="radio" name="ink" value="Canon" id="Canon">
+                                    <label for="Canon">CANON <b> +₱7</b> </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dp-row">
+                        <div class="dp3">
+                            <h3>NO. OF COPIES</h3>
+                            <input type="number" name="DigitalPrintingCopies" id="DigitalPrintingCopies" placeholder="Quantity">
+                        </div>
+                        <div class="dp4">
+                            <h3>FILE</h3>
+                            <input type="file" name="DPFile" id="DPFile" placeholder="Upload File">
+                        </div>
+                    </div>
+                </div>
+                <div class="binding" id="binding-section">
+                    <h2>BINDING</h2>
+                    <h5>PRICE PER PAGE: ₱50</h5>
+                    <div class="dp-row">
+                        <div class="dp1">
+                            <h3>BINDING TYPE</h3>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="binding-type" value="Wire" id="Wire">
+                                    <label for="Wire">WIRE <b> +₱20</b></label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="binding-type" value="Saddle Stitch" id="SaddleStitch">
+                                    <label for="Saddle Stitch">SADDLE STITCH <b> +₱40</b></label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="binding-type" value="Heated Spine" id="HeatedSpine">
+                                    <label for="Heated Spine">HEATEN SPINE <b> +₱50</b></label>
+                                </li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dp-row">
+                        <div class="dp3">
+                            <h3>NO. OF COPIES</h3>
+                            <input type="number" name="BindingCopies" id="BindingCopies" placeholder="Quantity">
+                        </div>
+                        <div class="dp4">
+                            <h3>FILE</h3>
+                            <input type="file" name="DPFile" id="DPFile" placeholder="Upload File">
+                        </div>
+                    </div>
+                </div>
+                <div class="laminating" id="laminating-section">
+                    <h2>LAMINATING</h2>
+                    <h5>PRICE PER PAGE: ₱30</h5>
+                    <div class="dp-row">
+                        <div class="dp3">
+                            <h3>NO. OF COPIES</h3>
+                            <input type="number" name="LaminatingCopies" id="LaminatingCopies" placeholder="Quantity">
+                        </div>
+                        <div class="dp4">
+                            <h3>FILE</h3>
+                            <input type="file" name="DPFile" id="DPFile" placeholder="Upload File">
+                        </div>
+                    </div>
+                </div>
+                <div class="cutting" id="cutting-section">
+                    <h2>CUTTING</h2>
+                    <h5>PRICE PER PAGE: ₱50</h5>
+                    <div class="dp-row">
+                        <div class="dp3">
+                            <h3>NO. OF COPIES</h3>
+                            <input type="number" name="CuttingCopies" id="CuttingCopies" placeholder="Quantity">
+                        </div>
+                        <div class="dp4">
+                            <h3>FILE</h3>
+                            <input type="file" name="DPFile" id="DPFile" placeholder="Upload File">
+                        </div>
+                    </div>
+                </div>
+                <div class="cold-drinks" id="cold-drinks-section">
+                    <h2>COLD DRINKS</h2>
+                <div class="food-items">
+                    <div class="item">
+                        <img src="/Menu Folder/pictures/saltedcaramel.jpg">
+                        <p>ICED SALTED CARAMEL LATTE</p>
+                        <h4>PRICE: ₱150</h4>
+                        <input type="number" name="ISCL" id="ISCL" placeholder="Quantity">
+                    </div>
+                    <div class="item">
+                        <img src="/Menu Folder/pictures/choconut.jpg">
+                        <p>CHOCO HAZELNUT FRAPPE</p>
+                        <h4>PRICE: ₱150</h4>
+                        <input type="number" id="CHF" id="CHF" placeholder="Quantity">
+                    </div>
+                    <div class="item">
+                        <img src="/Menu Folder/pictures/caramelmachi.jpg">
+                        <p>ICED CARAMEL MACCHIATO</p>
+                        <h4>PRICE: ₱120</h4>
+                        <input type="number" name="ICM"  id="ICM" placeholder="Quantity">
+                    </div>
+                    <div class="item">
+                        <img src="/Menu Folder/pictures/matchatte.jpg">
+                        <p>ICED MATCHA LATTE</p>
+                        <h4>PRICE: ₱120</h4>
+                        <input type="number" name="IML" id="IML" placeholder="Quantity">
+                    </div>
+                    <div class="item">
+                        <img src="/Menu Folder/pictures/milosaur.jpg">
+                        <p>MILO DINOSAUR</p>
+                        <h4>PRICE: ₱100</h4>
+                        <input type="number" name="MD" id="MD" placeholder="Quantity">
+                    </div>
+                    <div class="item">
+                        <img src="/Menu Folder/pictures/strawberry lemonade.jfif">
+                        <p>STRAWBERRY LEMONADE</p>
+                        <h4>PRICE: ₱90</h4>
+                        <input type="number" name="SL" id="SL" placeholder="Quantity">
+                    </div>
+                    <div class="item">
+                        <img src="/Menu Folder/pictures/bluegoon.jpg">
+                        <p>BLUE LEMONADE</p>
+                        <h4>PRICE: ₱90</h4>
+                        <input type="number" name="BL" id="BL" placeholder="Quantity">
+                    </div>
+                    
+                </div>
+                </div>
+                <div class="hot-drinks" id="hot-drinks-section">
+                    <h2>HOT DRINKS</h2>
+                    <div class="food-items">
+                        <div class="item">
+                            <img src="/Menu Folder/pictures/special.jpg">
+                            <p>VITALY TEA SPECIAL</p>
+                            <h4>PRICE: ₱120</h4>
+                            <input type="number" name="VTS" id="VTS" placeholder="Quantity">
+                        </div>
+                        <div class="item">
+                            <img src="/Menu Folder/pictures/spanishlat.jpeg">
+                            <p>SPANISH LATTE</p>
+                            <h4>PRICE: ₱120</h4>
+                            <input type="number" name="SL" id="SL" placeholder="Quantity">
+                        </div>
+                        <div class="item">
+                            <img src="/Menu Folder/pictures/cinammon.jpg">
+                            <p>CINNAMON HOT CHOCOLATE</p>
+                            <h4>PRICE: ₱120</h4>
+                            <input type="number" name="CHC" id="CHC" placeholder="Quantity">
+                        </div>
+                        <div class="item">
+                            <img src="/Menu Folder/pictures/hotchoco.jpg">
+                            <p>CLASSIC HOT CHOCOLATE</p>
+                            <h4>PRICE: ₱100</h4>
+                            <input type="number" name="CHCC" id="CHCC" placeholder="Quantity">
+                        </div>
+                        <div class="item">
+                            <img src="/Menu Folder/pictures/vanillamond.jpg">
+                            <p>VANILLA ALMOND LATTE</p>
+                            <h4>PRICE: ₱100</h4>
+                            <input type="number" name="VAL" id="VAL" placeholder="Quantity">
+                        </div>
+                    </div>
+                </div>
+                <div class="sandwiches" id="sandwiches-section">
+                    <h2>SANDWICHES</h2>
+                        <div class="food-items">
+                        <div class="item">
+                            <img src="/Menu Folder/pictures/chickenpesto.jpg">
+                            <p>CHICKEN PESTO PANINI</p>
+                            <h4>PRICE: ₱120</h4>
+                            <input type="number" name="CPP" id="CPP" placeholder="Quantity">
+                        </div>
+                        <div class="item">
+                            <img src="/Menu Folder/pictures/roastbeef.jpg">
+                            <p>ROAST BEEF SANDWICH</p>
+                            <h4>PRICE: ₱120</h4>
+                            <input type="number" name="RBS" id="RBS" placeholder="Quantity">
+                        </div>
+                        <div class="item">
+                            <img src="/Menu Folder/pictures/turkeycado.jfif">
+                            <p>TURKEY AVOCADO SANDWICH</p>
+                            <h4>PRICE: ₱120</h4>
+                            <input type="number" name="TVS" id="TVS" placeholder="Quantity">
+                        </div>
+                        <div class="item">
+                            <img src="/Menu Folder/pictures/chickwich.jpg">
+                            <p>CHICKEN SANDWICH</p>
+                            <h4>PRICE: ₱100</h4>
+                            <input type="number" name="CS" id="CS" placeholder="Quantity">
+                        </div>
+                        <div class="item">
+                            <img src="/Menu Folder/pictures/grilledcheese.jpg">
+                            <p>GRILLED CHEESE</p>
+                            <h4>PRICE: ₱100</h4>
+                            <input type="number" name="/GC" id="GC" placeholder="Quantity">
+                        </div>
+                        <div class="item">
+                            <img src="/Menu Folder/pictures/clubwich.jpeg">
+                            <p>CLUB SANDWICH</p>
+                            <h4>PRICE: ₱100</h4>
+                            <input type="number" name="CSW" id="CSW" placeholder="Quantity">
+                        </div>
+                        <div class="item">
+                            <img src="/Menu Folder/pictures/blt.jpeg">
+                            <p>BLT SANDWICH</p>
+                            <h4>PRICE: ₱100</h4>
+                            <input type="number" name="BS"  id="BS" placeholder="Quantity">
+                        </div>
+                        <div class="item">
+                            <img src="/Menu Folder/pictures/tunamelt.jfif">
+                            <p>TUNA MELT SANDWICH</p>
+                            <h4>PRICE: ₱100</h4>
+                            <input type="number" name="TMS" id="TMS" placeholder="Quantity">
+                        </div>
+                        <div class="item">
+                            <img src="/Menu Folder/pictures/breakfast.jpg">
+                            <p>BREAKFAST SANDWICH</p>
+                            <h4>PRICE: ₱100</h4>
+                            <input type="number" name="BSW" id="BSW" placeholder="Quantity">
+                        </div>
+                        <div class="item">
+                            <img src="/Menu Folder/pictures/hamdandcheese.jpg">
+                            <p>HAM & CHEESE SANDWICH</p>
+                            <h4>PRICE: ₱100</h4>
+                            <input type="number" name="HCS" id="HCS" placeholder="Quantity">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="infowrap" id="infowrap">
+                <div class="Info" id="Info">
+                    <h2>Fill out Information</h2>
+                    <div class="info-row">
+                        <div class="info1">
+                            <h3>NAME</h3>
+                            <input type="text" name="name" id="name" placeholder="Ronn Rosarito">
+                        </div>
+                        <div class="info2">
+                            <h3>CONTACT NO.</h3>
+                            <input type="text" name="contact" id="contact" placeholder="09XXXXXXXXX">
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info3">
+                            <h3>ADDRESS</h3>
+                            <input type="text" name="address" id="address" placeholder="Feutech">
+                        </div>
+                        <div class="info4">
+                            <h3>EMAIL</h3>
+                            <input type="email" name="email" id="email" placeholder="Example@gmail.com">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            </div>
+            <div class="checkout" id="checkoutb">
+                <button type="submit" id="checkouts">Checkout</button>
+            </div>
+
+
+        <footer>
+            <div class="fcontainer">
+                <div class="fheader">
+                    <img src="/Logo.png" alt="Logo">
+                    <h3>VITALY TEA</h3>
+                </div>
+                <div class="f1">
+                    <div class="left">
+                        <h3>Give us feedback</h3>
+                        <form action="#" method="post">
+                            <input type="text" name="name" placeholder="Your Name (Optional)">
+                            <textarea name="message" placeholder="Your Feedback" required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="center">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/Services Folder/services.html">Services</a></li>
+                            <li><a href="/Menu Folder/menu.html">Menu</a></li>
+                            <li><a href="order.html">Order</a></li>
+                            <li><a href="/About Folder/about.html">About</a></li>
+                            <li><a href="/Contact Folder/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li><a href="#"><img src="/Header-Footer/pictures/facebook.png" alt="Facebook"></a><a href="">@VitalyTea</a></li>
+                            <li><a href="#"><img src="/Header-Footer/pictures/instagram.png" alt="Instagram"></a><a href="">@VitalyTea</a></li>
+                            <li><a href="#"><img src="/Header-Footer/pictures/tiktok.png" alt="Tiktok"></a><a href="">@VitalyTea</a></li>
+                            <li><a href="#"><img src="/Header-Footer/pictures/location.png" alt="Location"></a><a href="">FEUTECH</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/Header-Footer/borgir.js"></script>
+    <script src="order.js"></script>
+</body>
+</html>
