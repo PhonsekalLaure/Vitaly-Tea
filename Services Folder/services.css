@@ -6,7 +6,8 @@ main{
     font-weight: 600;
     color: #1b3a4b;
     padding: 20px;
-    margin-left: 7%;   
+    margin-left: 7%;
+    font-size: 32px;   
 }
 
 .services-container {

@@ -1,0 +1,207 @@
+main{
+    min-height: 100vh;
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.services-title {
+    font-family: "Lexend Giga", sans-serif;
+    font-weight: 600;
+    color: #1b3a4b;
+    padding: 20px;
+    margin-left: 7%;
+}
+#carouselHeader1,
+#carouselHeader2,
+#carouselHeader3{
+    width: 80%;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+
+}
+#carouselHeader1 h1,
+#carouselHeader2 h1,
+#carouselHeader3 h1{
+    font-size: 40px;
+    font-family: "Lexend Giga", sans-serif;
+    font-weight: bold;
+    color: #fafafa;
+    text-shadow: -0.5px -0.5px 0 #1b3a4b, 0.5px -0.5px 0 #1b3a4b, -0.5px 0.5px 0 #1b3a4b, 0.5px 0.5px 0 #1b3a4b;
+}
+#carouselHeader1 img,
+#carouselHeader2 img,
+#carouselHeader3 img{
+    width: 100%;
+    height: 550px;
+}
+
+.carousel-caption p{
+    color: #fafafa ;
+    font-size: 20px;
+    text-shadow: -0.5px -0.5px 0 #1b3a4b, 0.5px -0.5px 0 #1b3a4b, -0.5px 0.5px 0 #1b3a4b, 0.5px 0.5px 0 #1b3a4b;
+}
+.inner #p{
+    color: #1b3a4b;
+    font-size: 24px;
+    margin: 1% 10% 2% 10%;  
+    text-align: justify;
+}
+.sub-title{
+    margin-left: 9%;
+    margin-bottom: 0%;
+    font-family: "Lexend Giga", sans-serif;
+    font-weight: 600;
+    color: #1b3a4b;
+    padding: 20px;
+}
+.inner:last-child{
+    margin-bottom: 5%;
+}
+@media (max-width: 1700px){
+
+    .services-title {
+        font-size: 30px;
+        margin-left: 7%;
+    }
+    .inner #p{
+        font-size: 22px;
+    }
+    .sub-title{
+        margin-left: 9%;
+        font-size: 22px;
+    }
+    #carouselHeader1 h1,
+    #carouselHeader2 h1,
+    #carouselHeader3 h1{
+        font-size: 38px;
+    }
+    #carouselHeader1 img,
+    #carouselHeader2 img,
+    #carouselHeader3 img{
+        height: 500px;
+    }
+    #carouselHeader1 p,
+    #carouselHeader2 p,
+    #carouselHeader3 p{
+        font-size: 18px;
+    }
+}
+@media (max-width: 1375px){
+    .services-title {
+        font-size: 28px;
+        margin-left: 7%;
+    }
+    .inner #p{
+        font-size: 20px;
+    }
+    .sub-title{
+        margin-left: 9%;
+        font-size: 20px;
+    }
+    #carouselHeader1 h1,
+    #carouselHeader2 h1,
+    #carouselHeader3 h1{
+        font-size: 36px;
+    }
+    #carouselHeader1 img,
+    #carouselHeader2 img,
+    #carouselHeader3 img{
+        height: 450px;
+    }
+    #carouselHeader1 p,
+    #carouselHeader2 p,
+    #carouselHeader3 p{
+        font-size: 16px;
+    }
+}
+@media (max-width: 1000px){
+    .services-title {
+        font-size: 26px;
+        margin-left: 4%;
+    }
+    .inner #p{
+        font-size: 18px;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+    .sub-title{
+        margin-left: 8%;
+        font-size: 18px;
+    }
+    #carouselHeader1 h1,
+    #carouselHeader2 h1,
+    #carouselHeader3 h1{
+        font-size: 34px;
+    }
+    #carouselHeader1 img,
+    #carouselHeader2 img,
+    #carouselHeader3 img{
+        height: 400px;
+    }
+    #carouselHeader1 p,
+    #carouselHeader2 p,
+    #carouselHeader3 p{
+        font-size: 14px;
+    }
+}
+@media (max-width: 800px){
+    .services-title {
+        font-size: 24px;
+        margin-left: 3%;
+    }
+    .inner #p{
+        font-size: 16px;
+        margin-top: 3%;
+        margin-bottom: 6%;
+    }
+    .sub-title{
+        margin-left: 7%;
+        font-size: 16px;
+    }
+    #carouselHeader1 h1,
+    #carouselHeader2 h1,
+    #carouselHeader3 h1{
+        font-size: 28px;
+    }
+    #carouselHeader1 img,
+    #carouselHeader2 img,
+    #carouselHeader3 img{
+        height: 300px;
+    }
+    #carouselHeader1 p,
+    #carouselHeader2 p,
+    #carouselHeader3 p{
+        font-size: 14px;
+    }
+}
+@media (max-width: 500px){
+    .services-title {
+        font-size: 22px;
+        margin-left: 2%;
+    }
+    .inner #p{
+        font-size: 15px;
+        margin-bottom: 15%;
+    }
+    .sub-title{
+        margin-left: 6%;
+        font-size: 15px;
+    }
+    #carouselHeader1 h1,
+    #carouselHeader2 h1,
+    #carouselHeader3 h1{
+        font-size: 21px;
+    }
+    #carouselHeader1 img,
+    #carouselHeader2 img,
+    #carouselHeader3 img{
+        height: 200px;
+    }
+    #carouselHeader1 p,
+    #carouselHeader2 p,
+    #carouselHeader3 p{
+        font-size: 12px;
+    }
+}
