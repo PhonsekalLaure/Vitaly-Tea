@@ -7,6 +7,7 @@ main{
     color: #1b3a4b;
     padding: 20px 0 50px 0;
     text-align: center;
+    font-size: 32px;
 }
 #credit-grid {
     display: grid;
@@ -148,6 +149,9 @@ main{
         font-size: 40px;
         height: 280px;
     }
+    #credits-title{
+        font-size: 30px;
+    }
 }
 @media (max-width: 1375px){
     #credit-grid {
@@ -186,12 +190,17 @@ main{
         animation: slide-down 0.3s ease;
     }
  }
+@media (max-width: 1375){
+    #credits-title{
+        font-size: 28px;
+    }
+}
 @media (max-width: 1000px) {
     nav{
         top: 76px;
     }
     #credits-title{
-        font-size: 22px;
+        font-size: 26px;
     }
     #credit-grid {
         width: 65%;
@@ -215,13 +224,13 @@ main{
         margin-left: -20px;
     }
     #modal-content {
-        width: 25%;
+        width: 30%;
         margin: 25% auto;
     }
 }
 @media (max-width: 800px) {
     #credits-title{
-        font-size: 20px;
+        font-size: 24px;
     }
     #credit-grid {
         grid-template-columns: 1fr;
@@ -235,17 +244,12 @@ main{
     }
     #modal-content {
         padding: 20px 30px;
-        width: 30%;
+        width: 50%;
     }
 }
 @media (max-width: 768px){
     nav{
         top: 61px;
-    }
-}
-@media (max-width: 700px) {
-    #credits-title {
-        font-size: 18px;
     }
 }
 @media (max-width: 600px) {
@@ -274,6 +278,9 @@ main{
 @media (max-width: 500px) {
     #modal-body ul li{
         margin-left: -25px;
+    }
+    #credits-title {
+        font-size: 22px;
     }
 }
 @media (max-width: 400px) {

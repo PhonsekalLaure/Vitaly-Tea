@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 $(document).ready(function() {
     if (!sessionStorage.getItem('loadingShown')) {
-        $('body').load('load.html', function() {
+        $('body').load('/Header-Footer/load.html', function() {
             setTimeout(function() {
                 sessionStorage.setItem('loadingShown', 'true');
                 location.reload();
@@ -18,4 +18,6 @@ $(document).ready(function() {
         sessionStorage.removeItem('loadingShown');
     }
 });
-
+document.getElementById("order-button").addEventListener("click", function() {
+    window.location.href = "/Order Folder/order.html";
+});

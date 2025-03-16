@@ -243,6 +243,9 @@ input[type="number"]{
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 .item {
@@ -403,15 +406,57 @@ button#proceed-receipt{
 .receipt button:hover {
     background-color: #16303a;
 }
-@media  (max-width: 768px) {
+@media (max-width: 1080px) {
+    .container {
+        margin-top: 10px;
+    }
+    .order h1 {
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+    .order h6 {
+        font-size: 1rem;
+        margin: 10px;
+    }
+    .services, .menu {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .services label, .menu label {
+        font-size: 1rem;
+    }
+    .dp-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .dp1, .dp2, .dp3, .dp4 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
     .food-items {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .food-items img {
+        width: 100px;
+        height: 100px;
+    }
+    .info1, .info2, .info3, .info4 {
+        width: 100%;
+    }
+    .info-row {
+        flex-direction: column;
+        align-items: flex-start;
     }
     .info1 h3, .info2 h3, .info3 h3, .info4 h3 {
         font-size: 1rem;
     }
-    .Info h2{
+    .Info h2 {
         font-size: 1.1rem;
     }
-    
+    .item p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 0.8rem;
+    }
 }

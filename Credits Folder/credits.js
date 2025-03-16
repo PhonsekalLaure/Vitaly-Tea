@@ -30,6 +30,40 @@ document.addEventListener('DOMContentLoaded', function() {
                 <li><a href="https://www.flaticon.com/free-icon/binding_829552" target="_blank">Binding Image</a></li>
                 <li><a href="https://www.flaticon.com/free-icon/paper-cut_2557509" target="_blank">Cutting Image</a></li>
             </ul>
+
+            <h4>Digital Printing</h4>
+            <ul>
+                <li><a href="https://pentagonprinters.com/wp-content/uploads/2019/01/neils-blog-printing-3-1-2.jpg" target="_blank">Carousel Slide 1</a></li>
+                <li><a href="https://images.pexels.com/photos/23534042/pexels-photo-23534042.jpeg?cs=srgb&dl=pexels-jakubzerdzicki-23534042.jpg&fm=jpg" target="_blank">Carousel Slide 2</a></li>
+                <li><a href="https://static.vecteezy.com/system/resources/previews/056/808/838/non_2x/large-format-printer-producing-vibrant-colorful-prints-free-photo.jpg" target="_blank">Carousel Slide 3</a></li>
+                <li><a href="https://artisanhd.com/wp-content/uploads/2017/05/PhotoPaper-FourLight.jpg" target="_blank">Glossy Paper</a></li>
+                <li><a href="https://www.francescogola.net/wp-content/uploads/2021/03/Francesco-Gola-Review-Hahnemuhle-Matte-Glossy-Rag-Smooth-Textures-Hemp-Best-Photographic-Fine-Art-Paper-IMG_1029-1.jpg" target="_blank">Matte Paper</a></li>
+                <li><a href="https://www.fedex.com/content/dam/fedex/us-united-states/FedEx-Office/images/2021/q1/color-cardstock-paper-samples.jpg" target="_blank">Textured Paper</a></li>
+                <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9li5UY1OWS0wlrUFsxPCAtdcb8X5xevHZ88bRCYUgiuw4b0NAOq9t4rPfmXWzLsDXGYE&usqp=CAU" target="_blank">HP Ink</a></li>
+                <li><a href="https://cdn-eu.aglty.io/epson/discover/genuine-inks/Genuine-Inks-Hero-Banner-LtR.jpg" target="_blank">Epson Ink</a></li>
+                <li><a href="https://i1.adis.ws/i/canon/pixma-g6000-series-tech-inks_9efabea1d2eb44bcb65dc1cbc141ccf4" target="_blank">Canon Ink</a></li>
+            </ul>
+
+            <h4>Binding</h4>
+            <ul>
+                <li><a href="https://static.wixstatic.com/media/bdac11_26ce4117b08346afa6741958c54028be~mv2.png/v1/fill/w_854,h_576,al_c,lg_1,q_90/bdac11_26ce4117b08346afa6741958c54028be~mv2.png" target="_blank">Saddle Stitch</a></li>
+                <li><a href="https://cdn11.bigcommerce.com/s-1p4wii2p9w/images/stencil/original/products/748/2680/17281LS-8__66828.1725472534.jpg?c=1" target="_blank">Heated Spine</a></li>
+                <li><a href="https://stokeyprintshop.co.uk/wp-content/uploads/2020/09/wire-binding.jpg" target="_blank">Wire</a></li>
+            </ul>
+
+            <h4>Laminating</h4>
+            <ul>
+                <li><a href="https://www.aimmailcenters.com/sites/all/themes/aim_zen/images/views/laminating.jpg" target="_blank">Carousel Slide 1</a></li>
+                <li><a href="https://www.absoluteprint.com/wp-content/uploads/2020/11/Lamination-Print-Company-Islington.jpg" target="_blank">Carousel Slide 2</a></li>
+                <li><a href="https://d2ngzhadqk6uhe.cloudfront.net/samedayru/images/contentimages/images/laminating_services%20-%20Copy%201.jpg" target="_blank">Carousel Slide 3</a></li>
+            </ul>
+
+            <h4>Cutting</h4>
+            <ul>
+                <li><a href="https://www.celloglas.co.uk/wp-content/uploads/2016/05/FS-Die-Cut-2-664x442.jpg" target="_blank">Carousel Slide 1</a></li>
+                <li><a href="https://allegra.ca/wp-content/uploads/2019/04/die-cut.jpg" target="_blank">Carousel Slide 2</a></li>
+                <li><a href="https://images.squarespace-cdn.com/content/v1/5720ea43b09f95daf28cba1e/1464892811994-EV8Q90KFNC6LT0NHR1YN/image-asset.jpeg" target="_blank">Carousel Slide 3</a></li>
+            </ul>
         `,
         menu: `
             <h2>Menu & Order</h2>

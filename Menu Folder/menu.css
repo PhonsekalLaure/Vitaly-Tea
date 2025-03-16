@@ -14,7 +14,7 @@
 }
 
 .sidebar h3 {
-    color: #333;
+    color: #1b3a4b;
     font-size: 18px;
     margin-bottom: 15px;
     padding-bottom: 5px;
@@ -44,7 +44,9 @@ main {
 h2 {
     color: #1b3552;
 }
-
+.container h3, .container p {
+    color: #1b3552;
+}
 hr {
     border: 1px solid #ddd;
 }
@@ -105,11 +107,11 @@ hr {
         color: #1b3552;
     }
     nav{
-        top: 76px;
+        top: 75.5px;
     }
 }
 @media (max-width: 768px) {
     nav{
-        top: 61px;
+        top: 60.5px;
     }
 }

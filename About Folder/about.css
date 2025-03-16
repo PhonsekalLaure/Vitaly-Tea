@@ -173,15 +173,15 @@ button:hover{
 }
 @media (max-width: 1000px) {
     nav{
-        top: 76px;
+        top: 75.5px;
     }
     #about-title{
-        font-size: 22px;
+        font-size: 30px;
     }
 }
 @media (max-width: 768px){
     nav{
-        top: 61px;
+        top: 60.5px;
     }
 }
 @media (max-width: 800px) {
@@ -226,11 +226,16 @@ button:hover{
         font-size: 16px;
     }
     #about-title{
-        font-size: 20px;
+        font-size: 28px;
     }
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     #about-title {
-        font-size: 18px;
+        font-size: 26px;
+    }
+}
+@media (max-width: 500px) {
+    #about-title {
+        font-size: 22px;
     }
 }
