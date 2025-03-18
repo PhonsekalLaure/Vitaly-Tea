@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b3a4b;
+}
+
+.coffee-cup {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #cdb773;
+    border: 5px solid #cdb773;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.handle {
+    position: absolute;
+    top: 10px;
+    right: -35px;
+    width: 50px;
+    height: 50px;
+    border: 10px solid #cdb773;
+    border-radius: 50%;
+    background: linear-gradient(to top, #cdb773);
+}
+
+.smoke-wrap {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px;
+}
+
+.smoke,
+.smoke2 {
+    filter: blur(5px);
+    transform-origin: 50% 50%;
+}
+
+.smoke {
+    animation: smoke1 3s linear infinite;
+    animation-delay: 0.5s;
+    height: 200px;
+}
+
+.smoke2 {
+    animation: smoke2 3s linear infinite;
+    animation-delay: 1.5s;
+    height: 200px;
+}
+
+.text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 180px;
+    position: absolute;
+    display: flex;
+}
+@media screen and (max-width: 1080px) {
+    .text {
+        font-size: 12px;
+        margin-top: 150px;
+    }
+    
+}
+
+@keyframes smoke1 {
+    0% {
+        filter: blur(0px);
+        transform: translateY(0px) scale(-1, 1);
+        opacity: 0;
+    }
+    25% {
+        filter: blur(3px);
+        transform: translateY(-5px) scale(-1, 1.05);
+        opacity: 0.5;
+    }
+    50% {
+        filter: blur(5px);
+        transform: translateY(-10px) scale(-1, 1.1);
+        opacity: 1;
+    }
+    75% {
+        filter: blur(5px);
+        transform: translateY(-15px) scale(-1, 1.15);
+        opacity: 0.5;
+    }
+    100% {
+        filter: blur(7px);
+        transform: translateY(-20px) scale(-1, 1.2);
+        opacity: 0;
+    }
+}
+
+@keyframes smoke2 {
+    0% {
+        filter: blur(0px);
+        transform: translateY(0px) scale(1);
+        opacity: 0;
+    }
+    25% {
+        filter: blur(3px);
+        transform: translateY(-5px) scale(1.05);
+        opacity: 0.5;
+    }
+    50% {
+        filter: blur(5px);
+        transform: translateY(-10px) scale(1.1);
+        opacity: 1;
+    }
+    75% {
+        filter: blur(5px);
+        transform: translateY(-15px) scale(1.15);
+        opacity: 0.5;
+    }
+    100% {
+        filter: blur(7px);
+        transform: translateY(-20px) scale(1.2);
+        opacity: 0;
+    }
+}

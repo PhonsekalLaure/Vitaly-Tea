@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitaly Tea</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Header-Footer/head-foot.css">
+    <link rel="stylesheet" href="/Services Folder/subservices.css">
+    <link rel="icon" href="/Logo.png">
+
+</head>
+<body>
+    <div id = "wrapper">
+        <div id="logonav">
+            <header>
+                <div id="logo">
+                    <a href="/index.html">
+                        <div id="logo">
+                            <img src="/Logo.png">
+                            <span id="logo-text">VITALY TEA</span>
+                        </div>
+                    </a>
+                </div>
+            </header>
+            
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="/Services Folder/services.html">Services</a>
+                        <div class="dropdown-content">
+                            <a href="/Services Folder/Digiprint/digiprint.html">Digital Printing</a>
+                            <a href="/Services Folder/Binding/binding.html">Binding</a>
+                            <a href="/Services Folder/Laminating/laminating.html">Laminating</a>
+                            <a href="/Services Folder/Cutting/cutting.html">Cutting</a>
+                        </div>
+                    </li>
+                    <li><a href="/Menu Folder/menu.html">Menu</a></li>
+                    <li><a href="/Order Folder/order.html">Order</a></li>
+                    <li><a href="/About Folder/about.html">About</a></li>
+                    <li><a href="/Contact Folder/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button id="hamburger" aria-label="Toggle Navigation">
+                &#9776;
+            </button>
+        </div>
+        
+        <div id="gap"></div>
+
+        <main>
+            <h2 class="services-title">BINDING</h2>
+            <div class="inner">
+            <div class="carousel slide carousel-fade" id="carouselHeader1" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="bind1.jpg" class="w-100">
+                        <div class="carousel-caption">
+                            <h1>SADDLE STITCH</h1>
+                            <p>A simple yet professional binding method where folded sheets are stapled along the spine. Ideal for booklets, catalogs, magazines, and newsletters.</p>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <img src="bind2.jpg" class="w-100">
+                        <div class="carousel-caption">
+                            <h1>HEATED SPINE</h1>
+                            <p>A sleek and sturdy binding method that uses adhesive to create a strong, seamless spine. Perfect for reports, presentations, and softcover books.</p>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <img src="bind3.jpg" class="w-100">
+                        <div class="carousel-caption">
+                            <h1>WIRE</h1>
+                            <p>A flexible and stylish binding option that allows pages to lay flat when opened. Great for manuals, planners, notebooks, and calendars.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHeader1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+    
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHeader1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+    
+                <div class="carousel-indicators">
+                    <button type="button" class="active" data-bs-target="#carouselHeader1" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carouselHeader1" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselHeader1" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <p id="p">Give your documents a polished and professional finish with our binding services!
+                Whether it’s a school project, a business proposal, a company report, or a book, our binding solutions provide durability, convenience, and an elegant touch.</p>
+        </div>
+        <div class="button-container">
+            <button class="main-button" onclick="toggleMenu()">Other Services</button>
+            <div class="sub-menu" id="subMenu">
+                <a href="/Services Folder/Cutting/cutting.html">Cutting</a>
+                <a href="/Services Folder/Digiprint/digiprint.html">Digital Printing</a>
+                <a href="/Services Folder/Laminating/laminating.html">Laminating</a>
+            </div>
+        </div>
+        </main>
+
+        <footer>
+            <div class="fcontainer">
+                <div class="fheader">
+                    <img src="/Logo.png" alt="Logo">
+                    <h3>VITALY TEA</h3>
+                </div>
+                <div class="f1">
+                    <div class="left">
+                        <h3>Give us feedback</h3>
+                        <form action="#" method="post">
+                            <input type="text" name="name" placeholder="Your Name (Optional)">
+                            <textarea name="message" placeholder="Your Feedback" required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="center">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/Services Folder/services.html">Services</a></li>
+                            <li><a href="/Menu Folder/menu.html">Menu</a></li>
+                            <li><a href="/Order Folder/order.html">Order</a></li>
+                            <li><a href="/About Folder/about.html">About</a></li>
+                            <li><a href="/Contact Folder/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li><a href="#"><img src="/Header-Footer/pictures/facebook.png" alt="Facebook"></a><a href="">@VitalyTea</a></li>
+                            <li><a href="#"><img src="/Header-Footer/pictures/instagram.png" alt="Instagram"></a><a href="">@VitalyTea</a></li>
+                            <li><a href="#"><img src="/Header-Footer/pictures/tiktok.png" alt="Tiktok"></a><a href="">@VitalyTea</a></li>
+                            <li><a href="#"><img src="/Header-Footer/pictures/location.png" alt="Location"></a><a href="">FEUTECH</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/Services Folder/services.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/Header-Footer/borgir.js"></script>
+</body>
+</html>

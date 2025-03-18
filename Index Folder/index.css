@@ -1,0 +1,140 @@
+#carouselHeader{
+    width: 100%;    
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+}
+#carouselHeader h1{
+  font-family: "Lexend Giga", sans-serif;
+    font-weight: bold;
+    color: #fafafa;
+    text-shadow: -0.5px -0.5px 0 #1b3a4b, 0.5px -0.5px 0 #1b3a4b, -0.5px 0.5px 0 #1b3a4b, 0.5px 0.5px 0 #1b3a4b;
+}
+#carouselHeader img{
+    width: 100%;
+    height: 550px;
+}
+.carousel-caption p{
+    color: #fafafa ;
+    font-size: 20px;
+    text-shadow: -0.5px -0.5px 0 #1b3a4b, 0.5px -0.5px 0 #1b3a4b, -0.5px 0.5px 0 #1b3a4b, 0.5px 0.5px 0 #1b3a4b;
+}
+#second{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.content {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+}
+
+.content img {
+  width: 50%;
+  height: 100%;
+}
+
+.content p {
+  width: 50%;
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  background-color: #cdb773;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.content p:nth-child(1){
+  background-color: #a7c4c2;
+}
+
+#third p{
+  background-color: #1b3a4b;
+  color: #fafafa;
+}
+
+@media (max-width: 1500px) {
+  #carouselHeader img{
+    height: 450px;
+  }
+  .content p{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1300px) {
+  #carouselHeader img{
+    height: 350px;
+  }
+  .carousel-caption h1{
+    font-size: 35px;
+  }
+  .carousel-caption p{
+    font-size: 18px;
+  }
+  .content p{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #carouselHeader img{
+    height: 250px;
+  }
+  .carousel-caption h1{
+    font-size: 30px;
+  }
+  .carousel-caption p{
+    font-size: 14px;
+  }
+  .content p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .carousel-caption h1{
+    font-size: 23px;
+  }
+  .carousel-caption p{
+    font-size: 13px;
+  }
+  .carousel-indicators [data-bs-target] {
+    width: 20px;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  #second{
+    width: 70%;
+  }
+  .content img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .content p {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  #carouselHeader img{
+    height: 200px;
+  }
+  .content p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 600px){
+  .content p {
+    font-size: 12px;
+  }
+}

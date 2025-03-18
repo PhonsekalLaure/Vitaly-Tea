@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #1b3a4b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-betweens;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1b3a4b;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 100%;
+    background-color: #fafafa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.order h1 {
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: left;
+    padding: 10px;
+    width: 97%;
+    font-family: "Lexend Giga", sans-serif;
+    margin-bottom: 20px;
+    font-size: 2.7rem;
+    color: #1b3a4b;
+    border-bottom: 2px solid #1b3a4b;
+    text-transform: uppercase;
+}
+
+.order h6{
+    margin-top: 10px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: 1.2rem;
+    font-size: 1.2rem;
+    color: #a7c4c2;
+
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+}
+
+.services, .menu {
+    margin-left: 20px;
+    width: 45%;
+    height: 460px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+    text-overflow: clip;
+}
+
+.services ul, .menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li, .menu li {
+    margin-bottom: 10px;
+}
+
+.services label, .menu label {
+    margin-left: 10px;
+    text-transform: uppercase;
+    color: #1b3a4b;
+}
+
+.row h2 {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #1b3a4b;
+    border-bottom: 2px solid #1b3a4b;
+}
+
+.digital-printing, .binding, .laminating, .cutting, .cold-drinks {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fafafa;
+    display: none;
+    border-top: 2px solid #1b3a4b;
+    padding: 20px;
+    margin: 30px 50px 0px 50px;
+}
+
+input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    accent-color: #cdb773;
+    border: 2px solid #cdb773;
+}
+
+input[type="radio"] {
+    width: 17px;
+    height: 17px;
+    accent-color: #cdb773;
+    border: 2px solid #cdb773;
+}
+
+.dp-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.dp1, .dp2, .dp3, .dp4 {
+    width: 45%;
+
+}
+
+.dp1 ul, .dp2 ul, .dp3 ul, .dp4 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dp3, .dp4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.dp3 input, .dp4 input {
+    margin-top: 10px;
+}
+
+h3 {
+    padding-bottom: 10px;
+    padding: 15px;
+}
+.digital-printing h2, .binding h2, .laminating h2, .cutting h2, .cold-drinks h2, .hot-drinks h2, .sandwiches h2 {
+    margin-left: 40px;
+}
+
+.binding li, .digital-printing li, .laminating li, .cutting li {
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+.services label, .menu label{
+    font-size: 1.2rem;
+}
+.button {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin: 20px 50px 0px 50px;
+    padding: 20px;
+
+}
+button#order {
+    margin-bottom: 20px;
+    bottom: 20px;
+    float: right;
+    right: 20px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #1b3a4b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+button#order:hover {
+    background-color: #16303a;
+}
+#DPNumber{
+    width: 140px;
+    margin-left: 14px;
+    margin-top: 10px;
+}
+input[type="number"]{
+    width: 70px;
+    margin-left: 14px;
+    margin-top: 10px;
+}
+.cold-drinks, .hot-drinks, .sandwiches {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    border-top: 2px solid #1b3a4b;
+    padding: 20px;
+    margin: 30px 50px 0px 50px;
+}
+.food-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.item {
+    text-align: center;
+}
+.item p{
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+.item h4{
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+.checkout {
+    display: none;
+    justify-content: right;
+    align-items: right;
+    margin-top: 20px;
+    height: 90px;
+    padding: 20px;
+}   
+button#checkouts {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #1b3a4b;
+    color: #fff;
+    float: right;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+.infowrap{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px 0px 50px;
+    border-top: 2px solid #1b3a4b;
+}
+.Info {
+    width: 70%;
+    display: none;
+    padding: 10px;
+    background-color: #fafafa;
+    margin: 50px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-overflow: none;
+}
+
+.Info h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #1b3a4b;
+    text-transform: uppercase;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.info1, .info2, .info3, .info4 {
+    width: 48%;
+}
+
+.info1 h3, .info2 h3, .info3 h3, .info4 h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #1b3a4b;
+    text-overflow: ellipsis;
+    overflow: visible;
+    white-space: nowrap;
+    
+}
+
+.info1 input, .info2 input, .info3 input, .info4 input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #1b3a4b;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.receipt {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.receipt h2 {
+    margin-bottom: 20px;
+}
+
+#receipt-table, .receipt th, .receipt td {
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.receipt table {
+    width: 100%;
+}
+
+
+.receipt th {
+    text-align: left;
+}
+
+#receipt-info{
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+button#close-receipt {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 0.5px solid black;
+    border-radius: 5px;
+}
+button#proceed-receipt{
+    padding: 10px 20px;
+    background-color: #1b3a4b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    float: right;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.OrderForm h5{
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 1rem;
+    font-weight: 5rem;
+}
+.OrderForm b{
+    font-size: 0.8rem;
+}
+
+.receipt button:hover {
+    background-color: #16303a;
+}
+@media (max-width: 1080px) {
+    .container {
+        margin-top: 10px;
+    }
+    .order h1 {
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+    .order h6 {
+        font-size: 1rem;
+        margin: 10px;
+    }
+    .services, .menu {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .services label, .menu label {
+        font-size: 1rem;
+    }
+    .dp-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .dp1, .dp2, .dp3, .dp4 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .food-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .food-items img {
+        width: 100px;
+        height: 100px;
+    }
+    .info1, .info2, .info3, .info4 {
+        width: 100%;
+    }
+    .info-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .info1 h3, .info2 h3, .info3 h3, .info4 h3 {
+        font-size: 1rem;
+    }
+    .Info h2 {
+        font-size: 1.1rem;
+    }
+    .item p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 0.8rem;
+    }
+}
